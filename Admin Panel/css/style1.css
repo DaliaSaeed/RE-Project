@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+}
+
+header h1{
+    margin-left: 25px;
+    margin-top: 2px;
+    background-color: #60606095;
+    padding: 8px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 6px #000;
+}
+
+header h1 span{ 
+    color: white;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-section img{
+    width: 46%;
+    padding-left: 16px;
+}
+
+
+.mid-section{
+    display: flex;
+    align-items: center;
+    margin-left: -9px;
+    
+}
+
+.mid-section form{
+     display: flex;
+     height: 40px;
+     width: 630px;
+}
+
+.mid-section input{
+    width: 100%;
+    border-radius: 2px 0 0 2px;
+    padding: 12px;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3 ;
+    border-right: nono;
+}
+
+.mid-section button{
+    width: 65px;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 2px 2px 0;
+    padding-top: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.mid-section button:hover{
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+}
+
+.mid-section .mic{
+    width: 40px ;
+    height: 40px ;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+.right-section a{
+    padding-right: 18px;
+    text-decoration: none;
+    color: #000;
+}
+
+.content-area{
+    height: calc(100vh - 56px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+aside{
+    height: 100%;
+    width: 280px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding-right: 15px;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+
+.nav-link span{
+    margin-left: 24px;
+    font-size: 1.4rem;
+    line-height: 2em;
+    font-weight: 400;
+}
+
+.active{
+    background-color: #e5e5e5;
+}
+
+#active-span{
+    font-weight: 500;
+}
+
+
+hr{
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin: 10px 0;
+}
+
+nav p{
+    font-size: 1.4rem;
+    color: #606060;
+    font-weight: 500;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+
+.channel-img{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 35px 15px;
+    border-top : 1px solid #ddd;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .post{
+    width: 280px;
+    height: 395px;
+    margin: 15px;
+    box-shadow: 5px 5px 5px #000;
+    background-color: white;
+    padding: 10px;
+    transition: 0.8s ease;
+}
+
+main .post:hover{
+    transform: scale(1.1);
+}
+
+main .post img{
+    width: 100%;
+    height: 50%;
+}
+
+.post p{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.post a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #606060;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    transition: 0.8s ease;
+}
+
+.post a:hover{
+    background-color: #606060bd; 
+    transform: scale(1.1);
+}
+
+#post-title{
+    font-weight: 400; 
+    text-align: center;  
+    margin: 6px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #606060;
+    color: white;
+}
+
+.post .post-detail p{
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+.post .post-detail img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+
+.post .ticket-data h2{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

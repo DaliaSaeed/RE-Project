@@ -289,9 +289,7 @@ progress {
   -webkit-appearance: button; }
 
 output {
-  display: inline-block;
-  margin-top: 15px;
-}
+  display: inline-block; }
 
 summary {
   display: list-item;
@@ -8218,7 +8216,7 @@ h1, h2, h3, h4, h5,
 #sidebar {
   min-width: 270px;
   max-width: 270px;
-  background: #3e64ff;
+  background: #343a40;
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8230,7 +8228,7 @@ h1, h2, h3, h4, h5,
     #sidebar.active ul.components li {
       font-size: 14px; }
       #sidebar.active ul.components li a {
-        padding: 7px 9px; }
+        padding: 10px 0; }
         #sidebar.active ul.components li a span {
           margin-right: 0;
           display: block;
@@ -8323,8 +8321,8 @@ a[data-toggle="collapse"] {
   transition: all 0.3s; }
 
 .btn.btn-primary {
-  background: #3e64ff;
-  border-color: #3e64ff; }
+  background: #343a40;
+  border-color: #343a40; }
   .btn.btn-primary:hover, .btn.btn-primary:focus {
     background: #3e64ff !important;
     border-color: #3e64ff !important; }
