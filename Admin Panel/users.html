@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>New Posts</title>
+  	<title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -9,8 +9,7 @@
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style3.css">
-        <link rel="stylesheet" href="css/singlePost.css">
+    <link rel="stylesheet" href="css/style3.css">
   </head>
   <body>
 		
@@ -23,6 +22,9 @@
           </li>
           <li>
             <a href="requsted.html"><span class="fa fa-paper-plane"></span> Requsted</a>
+          </li>
+          <li>
+            <a href="users.html"><span class="fa fa-user"></span> Users</a>
           </li>
           <li>
               <a href="#"><span class="fa fa-sign-out"></span> sign-out</a>
@@ -49,7 +51,6 @@
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav navbar-nav ml-auto">
                 <!-- <li class="nav-item">
@@ -70,59 +71,59 @@
             </div>
           </div>
         </nav>
-        <form>
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form4Example1">Ticket Title</label>
-              <input type="text" id="form4Example1" readonly class="form-control" value="test" />
-            </div>
+        <div class="form-outline mb-4">
+          <input type="search" class="form-control" id="datatable-search-input" placeholder="Search">
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                      <th scope="col">User ID</th>
+                      <th>Amout of posts</th>
+                      <th scope="col">Name</th>
+                      <th scope="col" >Country</th>
+                      <th scope="col">Balance</th>
+                      <th scope="col" >Email</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>56</td>
+                      <td>3/4/2022</td>
+                      <td>56</td>
+                      <td>3/4/2022</td>
+                      <td>56</td>
+                    </tr>
+                    
+                  </tbody>
+            </table>
+          </div>
+        
 
-            <div class="form-outline mb-4">
-                <label class="form-label" for="form4Example1">User ID</label>
-                <input type="text" id="form4Example1" readonly class="form-control" value="test" />
-              </div>
-
-            <div class="form-outline mb-4">
-                <label class="form-label" for="form4Example1">Location</label>
-                <input type="text" id="form4Example1" readonly class="form-control" value="egypt" />
-              </div>
-
-              <div class="form-outline mb-4">
-                <label class="form-label" for="form4Example1">Date</label>
-                <input type="date" id="form4Example1" readonly class="form-control" value="3/3/3030" />
-              </div>
+        <div class="wrapper">
+          <ul class="pagination" aria-label="Pagination">
+            <li><a href=""><span>First</span></a></li>
+            <li><a href=""><span>Previous</span></a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li ><a href="">4</a></li>
+            <li class="active"><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+            <li><a href=""><span>Next</span></a></li>
+            <li><a href=""><span>Last</span></a></li>
+          </ul>  
           
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form4Example2">category</label>
-              <input type="text" readonly id="form4Example2" class="form-control" value="test" />
-            </div>
+        </div>
+        
+      </div>
+		</div>
 
-            <div class="form-outline mb-4">
-                <label class="form-label" for="form4Example2">Price</label>
-                <input type="text" readonly id="form4Example2" class="form-control" value="10" />
-              </div>
-          
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form4Example3">Descripion</label>
-              <textarea class="form-control" readonly id="form4Example3" rows="4" >test test test</textarea>
-            </div>
-
-            <div class="row">
-                <div class="column">
-                  <img src="images/x1.PNG">
-                  <img src="images/x1.PNG">
-                  <img src="images/x1.PNG">
-                  <img src="images/x1.PNG">
-                  <img src="images/x1.PNG">
-                  <img src="images/x1.PNG">
-                </div>
-            <!-- Submit button -->
-            <div class="btn-group" data-toggle="buttons">
-                <button type="submit" class="btn btn-primary">Accept</button>
-                <button type="submit" class="btn btn-danger">Refuse</button>
-            </div>
-            
-          </form>
-		</article>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>

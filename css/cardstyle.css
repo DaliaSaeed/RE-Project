@@ -37,7 +37,7 @@ h2 {
     transition: .3s;
     }
     ul .booking-card .book-container {
-    height: 200px;
+    height: 100%;
     }
     ul .booking-card .book-container .content {
     position: relative;
