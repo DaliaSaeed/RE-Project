@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/style3.css">
+  </head>
+  <body>
+    <nav id="sidebar" class="active" id="nav-menu">
+      <h1><a href="index.html" class="logo">RE.</a></h1>
+      <ul class="active">
+        <li class="active">
+          <a href="home.html"><span class="fa fa-home"></span> Home</a>
+        </li>
+        <li>
+            <a href="#"><span class="fa fa-globe"></span> globel</a>
+        </li>
+        <li>
+          <a href="#"><span class="fa fa-sign-out"></span> sign-out</a>
+        </li>
+      </ul>
+
+      <div class="footer">
+        <p>
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved to RE Team</a>
+        </p>
+      </div>
+    </nav>
+    <nav>
+      <ul>
+        <li class="active">
+          <i class="fas fa-home"></i>
+          <p>Home</p>
+        </li>
+        <li>
+          <i class="fas fa-box"></i>
+          <p>Work</p>
+        </li>
+        <li>
+          <i class="fas fa-book-open"></i>
+          <p>Blog</p>
+        </li>
+        <li>
+          <i class="fas fa-users"></i>
+          <p>About Us</p>
+        </li>
+      </ul>
+    </nav>
+      
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+<script>
+  const contents = document.querySelectorAll(".content");
+const listItems = document.querySelectorAll("nav ul li");
+
+const hideAllContents = () => {
+  contents.forEach((content) => content.classList.remove("show"));
+};
+const hideAllItems = () => {
+  listItems.forEach((item) => item.classList.remove("active"));
+};
+
+listItems.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    hideAllContents();
+    hideAllItems();
+    item.classList.add("active");
+    contents[index].classList.add("show");
+  });
+});
+
+</script>
+
+    
+            
+  </body>
+</html>

@@ -77,8 +77,8 @@ h2 {
         background: #f0f0f0;
         transform: translateY(72px);
         transition: .3s;
-        height: 281px;
-    }
+        height: 311px;
+        }
     ul .booking-card .informations-container .title {
     position: relative;
     padding-bottom: 10px;
